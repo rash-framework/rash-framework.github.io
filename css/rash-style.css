@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Satisfy');
+
+/*font-family: 'Satisfy', cursive;*/
+
+
+/*font-family: 'Roboto',sans-serif;*/
+
+nav {
+  background-color: #494DA1;
+  min-height: 100px;
+}
+
+nav a.navbar-brand {
+  font-size: 32px!important;
+  font-family: 'Satisfy', cursive;
+}
+
+html,
+body {
+  height: 100%
+}
+
+div.jumbotron {
+  background-color: #494DA1
+}
+
+div.jumbotron>p.lead {
+  margin-top: 100px
+}
+
+blockquote a {
+  color: #FFCE54!important
+}
+
+blockquote footer.blockquote-footer {
+  font-size: 20px;
+  color: #ccc;
+}
