@@ -24,18 +24,24 @@
       <div class="container">
         <a class="navbar-brand">Rash</a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02"
-          aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav_list" aria-controls="nav_list" aria-expanded="false"
+          aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse navbar-nav justify-content-end" id="navbarTogglerDemo02">
+        <div class="collapse navbar-collapse justify-content-end" id="nav_list">
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link text-white" target="_blank" href="https://rawgit.com/essepuntato/rash/master/documentation/index.html">Documentation</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" target="_blank" href="#">Framework</a>
+              <a class="nav-link text-white" target="_blank" href="https://github.com/essepuntato/rash/tree/master/tools">Framework</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" target="_blank" href="https://github.com/rash-framework/raje-app">RAJE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" target="_blank" href="http://dasplab.cs.unibo.it/rocs">ROCS</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-white" target="_blank" href="https://github.com/essepuntato/rash">Source</a>
@@ -69,25 +75,25 @@
 
   <section class="second-panel">
     <div class="container text-center">
-      <h1 class="mb-0 display-4">
-        Rash is:
+      <h1 class="display-4">
+        Rash is
       </h1>
       <div class="row justify-content-md-center text-center">
-        <div class="col-4">
+        <div class="col-12 col-md-4">
           <span class="oi" data-glyph="bolt" title="bolt" aria-hidden="true"></span>
-          <h3>Easiness</h3>
+          <h3 class="text-black">Easiness</h3>
           <p>With it's only
             <b>32 HTML elements</b>, it has been designed to be easy to learn and use.</p>
         </div>
-        <div class="col-4">
+        <div class="col-12 col-md-4">
           <span class="oi" data-glyph="cloud" title="cloud" aria-hidden="true"></span>
-          <h3>Sharing</h3>
+          <h3 class="text-black">Sharing</h3>
           <p>It permits to share articles (and embedded semantic annotations)
             <b>through the Internet</b>.</p>
         </div>
-        <div class="col-4">
+        <div class="col-12 col-md-4">
           <span class="oi" data-glyph="heart" title="heart" aria-hidden="true"></span>
-          <h3>Polite</h3>
+          <h3 class="text-black">Polite</h3>
           <p>Its adoption is supported within the
             <b>existing publishing workflow</b>.</p>
         </div>
@@ -95,14 +101,66 @@
     </div>
   </section>
 
-  <!--
-  <section class="third-panel">
-    <div class="container">
+  <div class="container">
+    <hr>
+  </div>
 
-      <img src="imgs/rash.png" class="img-fluid" alt="Responsive image">
+  <section class="third-panel">
+    <div class="container text-center">
+
+      <h1 class="display-4">
+        The workflow
+      </h1>
+
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <img src="imgs/rash-framework.png" class="img-fluid" alt="Responsive image">
+        </div>
+        <div class="col-12 col-md-6">
+          <ul class="text-left list-unstyled">
+            <li>
+              <p>//TODO TYPEWRITE//</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
     </div>
   </section>
--->
+
+  <footer class="text-white text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <h3>Published papers</h3>
+          <ul class="text-left">
+            <li>
+              <p>
+                <strong>It ROCS!</strong> The RASH Online Conversion Service.
+                <a target="_blank" href="https://rawgit.com/essepuntato/rash/master/papers/rash-poster-www2016.html">RASH</a> and
+                <a target="_blank" href="https://rawgit.com/essepuntato/rash/master/papers/rash-poster-www2016.pdf">PDF</a>.
+              </p>
+            </li>
+            <li>
+              <p>
+                <strong>The RASH Framework:</strong> enabling HTML+RDF submissions in scholarly venues.
+                <a target="_blank" href="https://rawgit.com/essepuntato/rash/master/papers/rash-demo-iswc2015.html">RASH</a> and
+                <a target="_blank" href="http://ceur-ws.org/Vol-1486/paper_72.pdf">PDF</a>.
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6">
+          <h3>Adopt Rash</h3>
+          <p>Please feel free to
+            <strong>adopt RASH</strong> in your academic event.</p>
+          <p>Follow the guidelines on
+            <a href="https://github.com/essepuntato/rash#adopt-rash-in-your-academic-event">Github</a>.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -128,8 +186,7 @@
     })
 
     $(document).ready(function () {
-      $('section.first-panel').height(window.innerHeight)
-      $('section:not(.first-panel)').css("min-heigth", window.innerHeight / 2)
+      $('section.first-panel').css("min-height", window.innerHeight)
       $('div.wrapper').center()
 
       $('a.call_to_action').on('click', function () {

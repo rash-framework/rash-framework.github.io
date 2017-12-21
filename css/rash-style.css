@@ -5,12 +5,18 @@
 
 /*font-family: 'Roboto',sans-serif;*/
 
-section.first-panel {
+section.first-panel,
+body>footer {
   background-color: #494DA1;
+  padding-bottom: 20px;
 }
 
 nav {
   min-height: 100px;
+}
+
+.satisfy {
+  font-family: 'Satisfy', cursive;
 }
 
 nav a.navbar-brand {
@@ -34,7 +40,8 @@ div.wrapper>blockquote.blockquote {
   margin-top: 50px
 }
 
-div.wrapper>blockquote.blockquote a {
+div.wrapper>blockquote.blockquote a,
+body>footer a {
   color: #FFCE54!important
 }
 
@@ -64,16 +71,6 @@ div.wrapper .container .lead {
   color: #F5F7FA
 }
 
-section.second-panel,
-section.third-panel {
-  padding-top: 100px;
-  padding-bottom: 100px
-}
-
-section.second-panel h3 {
-  margin-bottom: 30px;
-}
-
 section.second-panel .icon-wrapper {
   display: inline-block;
   background-color: #494DA1;
@@ -97,17 +94,45 @@ section.second-panel .oi[title="cloud"] {
 }
 
 section.second-panel .oi[title="heart"] {
-  color: #DA4453
+  color: #ED5565
 }
 
-section.second-panel .row {
-  margin-top: 100px;
+section:not(.first-panel),
+body>footer {
+  color: #555;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
-section.second-panel h1 {
-  font-family: 'Satisfy', cursive;
+section:not(.first-panel) h1,
+body>footer h1 {
+  margin-bottom: 50px;
+  color: #333;
 }
 
-section.third-panel {
-  background-color: #434A54
+section:not(.first-panel) h3,
+body>footer h3 {
+  margin-bottom: 30px;
+}
+
+html {
+  font-size: .7rem;
+}
+
+@media (min-width:768px) {
+  html {
+    font-size: .8rem;
+  }
+}
+
+@media (min-width:992px) {
+  html {
+    font-size: .9rem;
+  }
+}
+
+@media (min-width:1200px) {
+  html {
+    font-size: 1rem;
+  }
 }
