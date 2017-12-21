@@ -5,8 +5,11 @@
 
 /*font-family: 'Roboto',sans-serif;*/
 
-nav {
+section.first-panel {
   background-color: #494DA1;
+}
+
+nav {
   min-height: 100px;
 }
 
@@ -15,24 +18,96 @@ nav a.navbar-brand {
   font-family: 'Satisfy', cursive;
 }
 
-html,
-body {
-  height: 100%
-}
-
 div.jumbotron {
-  background-color: #494DA1
+  position: relative;
+  background-color: inherit;
+  z-index: 10;
+  margin: 0;
 }
 
-div.jumbotron>p.lead {
-  margin-top: 100px
+div.wrapper>p.lead {
+  margin-top: 100px;
+  color: #cccccc;
 }
 
-blockquote a {
+div.wrapper>blockquote.blockquote {
+  margin-top: 50px
+}
+
+div.wrapper>blockquote.blockquote a {
   color: #FFCE54!important
 }
 
-blockquote footer.blockquote-footer {
+div.wrapper>blockquote.blockquote footer.blockquote-footer {
   font-size: 20px;
-  color: #ccc;
+  color: #cccccc;
+}
+
+div.wrapper .container {
+  margin-top: 50px
+}
+
+div.wrapper .container a.call_to_action {
+  padding: 15px 25px;
+  background-color: white;
+  color: #494DA1 !important;
+  font-weight: bold;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+div.wrapper .container a:hover {
+  cursor: pointer
+}
+
+div.wrapper .container .lead {
+  color: #F5F7FA
+}
+
+section.second-panel,
+section.third-panel {
+  padding-top: 100px;
+  padding-bottom: 100px
+}
+
+section.second-panel h3 {
+  margin-bottom: 30px;
+}
+
+section.second-panel .icon-wrapper {
+  display: inline-block;
+  background-color: #494DA1;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+section.second-panel .oi {
+  font-size: 40px;
+  display: inline-block;
+  margin-bottom: 40px;
+}
+
+section.second-panel .oi[title="bolt"] {
+  color: #FFCE54
+}
+
+section.second-panel .oi[title="cloud"] {
+  color: #4FC1E9
+}
+
+section.second-panel .oi[title="heart"] {
+  color: #DA4453
+}
+
+section.second-panel .row {
+  margin-top: 100px;
+}
+
+section.second-panel h1 {
+  font-family: 'Satisfy', cursive;
+}
+
+section.third-panel {
+  background-color: #434A54
 }
