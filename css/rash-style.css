@@ -7,7 +7,7 @@
 
 section.first-panel,
 body>footer {
-  background-color: #494DA1;
+  background-color: #3388d0;
   padding-bottom: 20px;
 }
 
@@ -45,9 +45,20 @@ body>footer a {
   color: #FFCE54!important
 }
 
+.link-colour {
+  color: #FFCE54 !important;
+}
+
 div.wrapper>blockquote.blockquote footer.blockquote-footer {
   font-size: 20px;
   color: #cccccc;
+}
+
+.blockquote-footer p {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
 }
 
 div.wrapper .container {
@@ -71,6 +82,10 @@ div.wrapper .container .lead {
   color: #F5F7FA
 }
 
+section.second-panel h1 {
+  margin-bottom: 0px !important;
+}
+
 section.second-panel .icon-wrapper {
   display: inline-block;
   background-color: #494DA1;
@@ -85,16 +100,21 @@ section.second-panel .oi {
   margin-bottom: 40px;
 }
 
-section.second-panel .oi[title="bolt"] {
-  color: #FFCE54
+section.second-panel .oi[data-glyph="copywriting"] {
+  color: #FFCE54;
 }
 
-section.second-panel .oi[title="cloud"] {
-  color: #4FC1E9
+section.second-panel .oi[data-glyph="cloud"] {
+  color: #4FC1E9;
 }
 
-section.second-panel .oi[title="heart"] {
-  color: #ED5565
+section.second-panel .oi[data-glyph="transfer"] {
+  color: #ED5565;
+}
+
+section .oi:first-child {
+  margin-top:40px;
+  margin-bottom: 10px;
 }
 
 section:not(.first-panel),
@@ -113,6 +133,10 @@ body>footer h1 {
 section:not(.first-panel) h3,
 body>footer h3 {
   margin-bottom: 30px;
+}
+
+div > img {
+	max-width: 80% !important;
 }
 
 html {

@@ -1,203 +1,225 @@
 <!doctype html>
-<html lang="en">
-
-<head>
-  <title>HOME - RAJE Project</title>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <link rel="stylesheet" href="css/rash-style.css">
-  <link rel="stylesheet" href="css/open-iconic.min.css">
-
-
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>The RASH Framework - RASH</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="css/rash-style.css" />
+        <link rel="stylesheet" href="css/open-iconic.min.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
     crossorigin="anonymous">
-</head>
+    </head>
+    <body>
+        <section class="first-panel">
+            <nav class="navbar navbar-light navbar-expand-lg text-white justify-content-between border-0">
+                <div class="container">
+                    <a href="index.html" class="navbar-brand text-white">RASH Framework</a>
 
-<body>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav_list" aria-controls="nav_list" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
 
-  <section class="first-panel">
+                    <div class="collapse navbar-collapse justify-content-end" id="nav_list">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link link-colour" href="rash.html">RASH</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="raje.html">RAJE</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="rocs.html">ROCS</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="publications.html">Publications</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
 
-    <nav class="navbar navbar-light navbar-expand-lg text-white justify-content-between border-0">
-      <div class="container">
-        <a class="navbar-brand">Rash</a>
+            <div class="jumbotron jumbotron-fluid text-center">
+                <div class="wrapper">
+                    <blockquote class="blockquote">
+                        <h1 class="mb-0 display-4 text-white"><b>Research Articles in Semplified HTML (RASH)</b></h1>
+                        <footer class="blockquote-footer">
+                            a subset of 32 HTML5 elements to create and share scholarly articles on the Web
+                            <p>Main citation: Peroni, S., Osborne, F., Di Iorio, A., Nuzzolese, A. G., Poggi, F., Vitali, F., Motta, E. (2017). Research Articles in Simplified HTML: a Web-first format for HTML-based scholarly articles. PeerJ Computer Science 3: e132. DOI: <a target="_blank" href="https://doi.org/10.7717/peerj-cs.132">https://doi.org/10.7717/peerj-cs.132</a> (also available in <a href="https://w3id.org/people/essepuntato/papers/rash-peerj2016.html">RASH</a>)</p>
+                        </footer>
+                    </blockquote>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav_list" aria-controls="nav_list" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+                    <div class="container">
+                        <a class="call_to_action" href="#intro">What's it?</a>
+                        <a class="call_to_action" href="#grammar">Grammar</a>
+                        <a class="call_to_action" href="#validators">Validators</a>
+                        <a class="call_to_action" href="#visualisation">Visualisation</a>
+                        <a class="call_to_action" href="#sparxtractor">Enhancement</a>
+                        <a class="call_to_action" href="#uptake">Uses</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <div class="collapse navbar-collapse justify-content-end" id="nav_list">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link text-white" target="_blank" href="https://rawgit.com/essepuntato/rash/master/documentation/index.html">Documentation</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" target="_blank" href="https://github.com/essepuntato/rash/tree/master/tools">Framework</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" target="_blank" href="https://github.com/rash-framework/raje-app">RAJE</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" target="_blank" href="http://dasplab.cs.unibo.it/rocs">ROCS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" target="_blank" href="https://github.com/essepuntato/rash">Source</a>
-            </li>
-          </ul>
-        </div>
-    </nav>
+        <section id="intro" class="third-panel">
+            <div class="container">
+                <h1 class="display-4">What is RASH</h1>
+                <p>The Research Articles in Simplified HTML (RASH) format is a markup language that restricts the use of HTML elements to only 32 elements for writing academic research articles. It allows authors to use embedded RDF annotations. In addition, RASH strictly follows the <a href="https://www.w3.org/TR/dpub-aria-1.0/" target="_blank">Digital Publishing WAI-ARIA Module 1.0</a> for expressing structural semantics on various markup elements used.</p>
+                <p>The development of RASH started from the whole HTML5 grammar, and proceeded by removing and restricting the particular use of HTML elements, to make them expressive enough for representing the structures of scholarly papers and to have the language totally compliant with the theory on <a target="_blank" href="https://doi.org/10.1002/asi.23088">structural patterns for XML documents</a>. These patterns allow one to create unambiguous, manageable and well-structured markup languages and, consequently, documents, fostering increased reusability (e.g., inclusion, conversion, etc.) among different languages. Also, thanks to the regularity they provide, it is possible to perform easily complex operations on pattern-based documents even when knowing very little about their vocabulary (automatic visualisation of document, inferences on the document structure, etc.)</p>
+            </div>
+        </section>
+        
+        <section id="grammar" class="third-panel">
+            <div class="container">
+                <h1 class="display-4">RelaxNG grammar</h1>
+                <p>The formal <a target="_blank" href="https://github.com/rash-framework/rash/grammar/">grammar of RASH</a> has been developed by means of RelaxNG, which is a simple, easy to learn, and powerful schema language for XML, accompanied by a descriptive <a target="_blank" href="https://rawgit.com/rash-framework/rash/master/documentation/index.html">documentation</a>. The grammar has been logically organised in four distinct logical blocks of syntactic rules, defining respectively elements, attributes, content models8 for the elements and their related attribute lists.</p>
+                <p>The 32 HTML5 elements that can be used in RASH are: <code>a</code>, <code>blockquote</code>, <code>body</code>, <code>code</code>, <code>em</code>, <code>figcaption</code>, <code>figure</code>, <code>h1</code>, <code>head</code>, <code>html</code>, <code>img</code>, <code>li</code>, <code>link</code>, <code>math</code>, <code>meta</code>, <code>ol</code>, <code>p</code>, <code>pre</code>, <code>q</code>, <code>script</code>, <code>section</code>, <code>span</code>, <code>strong</code>, <code>sub</code>, <code>sup</code>, <code>svg</code>, <code>table</code>, <code>td</code>, <code>th</code>, <code>title</code>, <code>tr</code>, <code>ul</code>.</p>
+                <p>In addition, RASH defines different ways to implement formulas. The standard specification for representing mathematics on the Web is <a target="_blank" href="https://www.w3.org/TR/MathML3/">MathML</a>, which can be used in RASH. However, even if MathML is the best accessible way for writing mathematical formulas, the organisation of the elements for defining even a quite simple formula is quite verbose and this is a reasonable obstacle to its direct adoption. Thus, it is also possible to define formulas by means of an image (element <code>img</code> with <code>@role = 'formula'</code>), or by using the element <code>span</code> (with <code>@role = 'formula'</code>) containing a LaTeX or <a target="_blank" href="http://asciimath.org/">AsciiMath</a> formulas – that can be rendered correctly via <a target="_blank" href="https://www.mathjax.org/">MathJax</a>.</p>
+            </div>
+        </section>
+        
+        <section id="validators" class="third-panel">
+            <div class="container">
+                <h1 class="display-4">Validating RASH documents</h1>
+                <p>Two applications has been developed in order to check whether a document is compliant with the RASH grammar:</p>
+                <ul>
+                	<li><p>a <a target="_blank" href="https://github.com/rash-framework/bash-validator/">Bash script</a> that enables RASH users to check their documents simultaneously both against the specific requirements in the RASH RelaxNG grammar and also against the HTML specification through W3C Nu HTML Checker;</p></li>
+                	<li><p>a <a target="_blank" href="https://github.com/rash-framework/python-validator/">Python application</a> that enables one to validate RASH documents against the RASH grammar, and it makes also available a Web interface for visualising all the validation issues retrieved in RASH documents.</p></li>
+                </ul>
+            </div>
+        </section>
+        
+        <section id="visualisation" class="third-panel">
+            <div class="container">
+                <h1 class="display-4">Visualising RASH on browsers</h1>
+                <p>The visualization of a RASH document is rendered by the browser by means of appropriate <a target="_blank" href="https://github.com/rash-framework/rash/css/">CSS3 stylesheets</a> and <a target="_blank" href="https://github.com/rash-framework/rash/js/">Javascript scripts</a> developed for this purpose. In particular, RASH adopts external libraries, such as <a target="_blank" href="http://getbootstrap.com/">Bootstrap</a> and <a target="_blank" href="https://jquery.com/">JQuery</a>, in order to provide the current visualisation and include additional tools for the user, such as the footbar with statistics about the paper (i.e., number of words, figures, tables and formulas) and a menu to change the actual layout of the page</p>
+                <p>In addition, RASH these scripts implements also the automatic rendering of paper items, such as references to a bibliographic entry or a figure, so as to reduce the cognitive effort of an author when writing a RASH paper by means of a text editor.</p>
+            </div>
+        </section>
+        
+        <section id="sparxtractor" class="third-panel">
+            <div class="container">
+                <h1 class="display-4">Adding semantic annotations</h1>
+                <p>The <a target="_blank" href="https://github.com/rash-framework/spar-xtractor">SPAR Xtractor Suite</a> is a Java application that performs the automatic enrichment of RASH documents with RDFa annotations defining the actual structure of such documents in terms of the <a target="_blank" href="http://www.sparontologies.net/ontologies/fabio">FRBR-aligned Bibliographic Ontology (FaBiO)</a> and the <a target="_blank" href="http://www.sparontologies.net/ontologies/fabio">Document Component Ontology (DoCO)</a>. SPAR Xtractor is designed as a one-click tool able to add automatically structural semantics to a RASH document.</p> 
+                <p>In particular, SPAR Xtractor takes a RASH document as input and returns a new RASH document where all its markup elements have been annotated with their actual structural semantics by means of RDFa. The tool associates a set of FaBIO or DoCO types with specific HTML elements. The set of HTML elements and their associations with FaBIO or DoCO types can be customised according to specific needs of expressivity.</p>
+            </div>
+        </section>
+        
+        <section id="uptake" class="third-panel">
+            <div class="container">
+                <h1 class="display-4">Community uptake</h1>
+                <p>The list of some venues that have adopted RASH as submission format:</p>
+                <ul>
+                    <li>
+                        <p><a href="http://iswc2017.semanticweb.org/">16th International Semantic Web Conference (ISWC 2017)</a></p>
+                    </li>
+                    <li>
+                        <p><a href="http://2017.eswc-conferences.org/">14th Extended Semantic Web Conference (ESWC 2017)</a></p>
+                    </li>
+                    <li>
+                        <p><a href="http://cs.unibo.it/save-sd/2017/index.html">2017 International Workshop on Semantics, Analytics, Visualisation: Enhancing Scholarly Data (SAVE-SD 2017)</a>, held during the <a href="http://www.www2017.com.au/">26th International World Wide Web Conference (WWW 2017)</a></p>
+                    </li>
+                    <li>
+                        <p><a href="http://eis.iai.uni-bonn.de/Event/mepdaw2017.html">3rd Workshop on Managing the Evolution and Preservation of the Data Web (MEPDaW 2017)</a>, held during the <a href="http://2017.eswc-conferences.org/">14th Extended Semantic Web Conference (ESWC 2017)</a></p>
+                    </li>
+                    <li>
+                        <p><a href="http://dcc.uchile.cl/cold2016/">7th International Workshop on Consuming Linked Data (COLD2016)</a>, held during the <a href="http://iswc2016.semanticweb.org">15th International Semantic Web Conference (ISWC 2016)</a></p>
+                    </li>
+                    <li>
+                        <p><a href="http://web.informatik.uni-mannheim.de/ld4ie2016/LD4IE2016/Overview.html">4th International Workshop on Linked Data for Information Extraction (LD4IE 2016)</a>, held during the <a href="http://iswc2016.semanticweb.org">15th International Semantic Web Conference (ISWC 2016)</a></p>
+                    </li>
+                    <li>
+                        <p><a href="http://linkedscience.org/events/lisc2016/">6th Workshop on Linked Science (LISC 2016)</a>, held during the <a href="http://iswc2016.semanticweb.org">15th International Semantic Web Conference (ISWC 2016)</a></p>
+                    </li>
+                    <li>
+                        <p><a href="http://modest.mobi/">2nd Workshop on Mobile Deployment of Semantic Technologies (MoDeST 2016)</a>, held during the <a href="http://iswc2016.semanticweb.org">15th International Semantic Web Conference (ISWC 2016)</a></p>
+                    </li>
+                    <li>
+                        <p><a href="http://provenanceweek.org/2016/p3yl/">PROV: Three Years Later 2016 Workshop</a>, held during the <a href="http://provenanceweek.org/2016">Provenance Week 2016</a></p>
+                    </li>
+                    <li>
+                        <p><a href="https://github.com/ceurws/lod/wiki/SemPub2016">Semantic Publishing Challenge 2016 (SemPub2016)</a>, held during the <a href="http://2016.eswc-conferences.org/">13th Extended Semantic Web Conference (ESWC 2016)</a></p>
+                    </li>
+                    <li>
+                        <p><a href="http://www.mico-project.eu/lime-workshop-2016/">4th International Workshop on Linked Media (LIME 2016)</a>, held during the <a href="http://2016.eswc-conferences.org/">13th Extended Semantic Web Conference (ESWC 2016)</a></p>
+                    </li>
+                    <li>
+                        <p><a href="/essepuntato/rash/blob/master/ekaw2016.cs.unibo.it">20th International Conference on Knowledge Engineering and Knowledge Management (EKAW 2016)</a></p>
+                    </li>
+                    <li>
+                        <p><a href="http://ws-rest.org/2016">2016 Workshop on Web APIs and RESTful Design (WS-REST2016)</a>, held during the <a href="http://icwe2016.inf.usi.ch/">16th International Conference on Web Engineering (ICWE2016)</a></p>
+                    </li>
+                    <li>
+                        <p><a href="http://iswc2016.semanticweb.org/">15th International Semantic Web Conference (ISWC 2016)</a></p>
+                    </li>
+                    <li>
+                        <p><a href="http://2016.eswc-conferences.org/">13th Extended Semantic Web Conference (ESWC 2016)</a></p>
+                    </li>
+                    <li>
+                        <p><a href="http://cs.unibo.it/save-sd/2016/index.html">2016 International Workshop on Semantics, Analytics, Visualisation: Enhancing Scholarly Data (SAVE-SD 2016)</a>, held during the <a href="http://www.www2016.ca/">25th International World Wide Web Conference (WWW 2016)</a></p>
+                    </li>
+                    <li>
+                        <p><a href="http://cs.unibo.it/save-sd/2015/index.html">2015 International Workshop on Semantics, Analytics, Visualisation: Enhancing Scholarly Data (SAVE-SD 2015)</a>, held during the <a href="http://www.www2015.it/">24th International World Wide Web Conference (WWW 2015)</a></p>
+                    </li>
+                    <li>
+                        <p><a href="http://lc2015.dibris.unige.it/">2015 International Workshop on Learning in the Cloud (LC2015)</a>, held during the <a href="http://ht.acm.org/ht2015/">26th ACM Conference on Hypertext and Social Media (Hypertex 2015)</a></p>
+                    </li>
+                    <li>
+                        <p><a href="https://github.com/ceurws/lod/wiki/SemPub2015">Semantic Publishing Challenge 2015 (SemPub2015)</a>, held during the <a href="http://2015.eswc-conferences.org/">12th Extended Semantic Web Conference (ESWC 2015)</a></p>
+                    </li>
+                    <li>
+                        <p><a href="https://linked2015.wordpress.com/">1st International Workshop on LINKed EDucation at the ISWC 2015</a>, held during the <a href="http://iswc2015.semanticweb.org/">14th International Semantic Web Conference (ISWC 2015)</a></p>
+                    </li>
+                    <li>
+                        <p><a href="http://oak.dcs.shef.ac.uk/ld4ie2015/LD4IE2015/Overview.html">3rd International Workshop on Linked Data for Information Extraction (LD4IE 2015)</a>, held during the <a href="http://iswc2015.semanticweb.org/">14th International Semantic Web Conference (ISWC 2015)</a></p>
+                    </li>
+</ul>
+            </div>
+        </section>
 
-    <div class="jumbotron jumbotron-fluid text-center">
+        <footer class="text-white text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <h3>Contributors</h3>
+                        <p>
+                            Main developers: 
+                            <a target="_blank" href="https://github.com/illbexyz">Alberto Nicoletti</a>,
+                            <a target="_blank" href="https://orcid.org/0000-0003-2928-9496">Andrea Giovanni Nuzzolese</a>,  
+                            <a target="_blank" href="http://orcid.org/0000-0003-0530-4305">Silvio Peroni</a> <a href="mailto:essepuntato@gmail.com"><sup class="oi" data-glyph="envelope-closed"></sup></a>,
+                            <a target="_blank" href="https://github.com/sideshowbarker">Michael Smith</a>
+                        </p>
+                        <p>
+                            Collaborators: 
+                            <a target="_blank" href="https://orcid.org/0000-0002-6661-8474">Dieter De Paepe</a>, 
+                            <a target="_blank" href="https://github.com/falcon03">Vincenzo Rubano</a>, 
+                            <a target="_blank" href="https://orcid.org/0000-0002-8596-222X">Ruben Verborgh</a> 
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <h3>License</h3>
+                        <p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a> The website and all its textual and media contents are licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>, unless specified differently.</p>
+                        <p>Some libraries (i.e. <a href="http://getbootstrap.com/">Bootstrap</a>, <a href="https://jquery.com/">JQuery</a>, and <a href="https://popper.js.org/">Popper</a>) are reused for rendering the current layout of the website. These libraries are licensed as indicated in their related websites.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
-      <div class="wrapper">
-        <blockquote class="blockquote">
-          <h1 class="mb-0 display-4 text-white">
-            <b>Research Articles in Semplified HTML</b>
-          </h1>
-          <footer class="blockquote-footer">
-            a Web-first format for HTML-based scholarly articles
-            <cite title="Research Articles in Semplified HTML: a Web-first format for HTML-based scholarly articles">
-              <a target="_blank" href="https://doi.org/10.7717/peerj-cs.132">https://doi.org/10.7717/peerj-cs.132</a>
-            </cite>
-          </footer>
-        </blockquote>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="js/jquery-3.2.1.slim.min.js"> </script>
+        <script src="js/popper.min.js"> </script>
+        <script src="js/bootstrap.min.js"> </script>
 
-        <div class="container">
-          <a class="call_to_action">Discover RASH</a>
-        </div>
-      </div>
-    </div>
+        <script>
+            jQuery.fn.center = function () {
+                var t = this.parent().css("top");
+                var l = this.parent().css("left");
 
-  </section>
+                this.css("position", "relative")
+                this.css("top", ((this.parent().height() - this.outerHeight()) * .75) + this.parent().scrollTop() + "px");
+                this.css("left", ((this.parent().width() - this.outerWidth()) / 2) + this.parent().scrollLeft() + "px");
+                return this;
+            }
 
-  <section class="second-panel">
-    <div class="container text-center">
-      <h1 class="display-4">
-        Rash is
-      </h1>
-      <div class="row justify-content-md-center text-center">
-        <div class="col-12 col-md-4">
-          <span class="oi" data-glyph="bolt" title="bolt" aria-hidden="true"></span>
-          <h3 class="text-black">Easiness</h3>
-          <p>With it's only
-            <b>32 HTML elements</b>, it has been designed to be easy to learn and use.</p>
-        </div>
-        <div class="col-12 col-md-4">
-          <span class="oi" data-glyph="cloud" title="cloud" aria-hidden="true"></span>
-          <h3 class="text-black">Sharing</h3>
-          <p>It permits to share articles (and embedded semantic annotations)
-            <b>through the Internet</b>.</p>
-        </div>
-        <div class="col-12 col-md-4">
-          <span class="oi" data-glyph="heart" title="heart" aria-hidden="true"></span>
-          <h3 class="text-black">Polite</h3>
-          <p>Its adoption is supported within the
-            <b>existing publishing workflow</b>.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+            $(window).on('resize', function () {
+                $('div.wrapper').center()
+            });
 
-  <div class="container">
-    <hr>
-  </div>
+            $(document).ready(function () {
+                $('section.first-panel').css("min-height", window.innerHeight)
+                $('div.wrapper').center()
 
-  <section class="third-panel">
-    <div class="container text-center">
-
-      <h1 class="display-4">
-        The workflow
-      </h1>
-
-      <div class="row">
-        <div class="col-12 col-md-6">
-          <img src="imgs/rash-framework.png" class="img-fluid" alt="Responsive image">
-        </div>
-        <div class="col-12 col-md-6">
-          <ul class="text-left list-unstyled">
-            <li>
-              <p>//TODO TYPEWRITE//</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <footer class="text-white text-center">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-md-6">
-          <h3>Published papers</h3>
-          <ul class="text-left">
-            <li>
-              <p>
-                <strong>It ROCS!</strong> The RASH Online Conversion Service.
-                <a target="_blank" href="https://rawgit.com/essepuntato/rash/master/papers/rash-poster-www2016.html">RASH</a> and
-                <a target="_blank" href="https://rawgit.com/essepuntato/rash/master/papers/rash-poster-www2016.pdf">PDF</a>.
-              </p>
-            </li>
-            <li>
-              <p>
-                <strong>The RASH Framework:</strong> enabling HTML+RDF submissions in scholarly venues.
-                <a target="_blank" href="https://rawgit.com/essepuntato/rash/master/papers/rash-demo-iswc2015.html">RASH</a> and
-                <a target="_blank" href="http://ceur-ws.org/Vol-1486/paper_72.pdf">PDF</a>.
-              </p>
-            </li>
-          </ul>
-        </div>
-        <div class="col-12 col-md-6">
-          <h3>Adopt Rash</h3>
-          <p>Please feel free to
-            <strong>adopt RASH</strong> in your academic event.</p>
-          <p>Follow the guidelines on
-            <a href="https://github.com/essepuntato/rash#adopt-rash-in-your-academic-event">Github</a>.</p>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
-    crossorigin="anonymous"></script>
-
-  <script>
-    jQuery.fn.center = function () {
-      var t = this.parent().css("top");
-      var l = this.parent().css("left");
-
-      this.css("position", "relative")
-      this.css("top", ((this.parent().height() - this.outerHeight()) * .75) + this.parent().scrollTop() + "px");
-      this.css("left", ((this.parent().width() - this.outerWidth()) / 2) + this.parent().scrollLeft() + "px");
-      return this;
-    }
-
-    $(window).on('resize', function () {
-      $('div.wrapper').center()
-    })
-
-    $(document).ready(function () {
-      $('section.first-panel').css("min-height", window.innerHeight)
-      $('div.wrapper').center()
-
-      $('a.call_to_action').on('click', function () {
-        window.scroll({
-          top: window.innerHeight,
-          left: 0,
-          behavior: 'smooth'
-        });
-      })
-    })
-  </script>
-</body>
-
+            });
+        </script>
+    </body>
 </html>
